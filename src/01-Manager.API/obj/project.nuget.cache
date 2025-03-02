@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1NbvCI3KSts=",
+  "success": true,
+  "projectFilePath": "/ProjetoWebAPI/src/01-Manager.API/01-Manager.API.csproj",
+  "expectedPackageFiles": [
+    "/home/thicodes/.nuget/packages/microsoft.aspnetcore.openapi/9.0.2/microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+    "/home/thicodes/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

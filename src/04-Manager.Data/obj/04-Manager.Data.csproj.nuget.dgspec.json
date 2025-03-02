@@ -4,14 +4,14 @@
     "/ProjetoWebAPI/src/04-Manager.Data/04-Manager.Data.csproj": {}
   },
   "projects": {
-    "/ProjetoWebAPI/src/04-Manager.Data/04-Manager.Data.csproj": {
+    "/ProjetoWebAPI/src/02-Manager.Domain/02-Manager.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/ProjetoWebAPI/src/04-Manager.Data/04-Manager.Data.csproj",
-        "projectName": "04-Manager.Data",
-        "projectPath": "/ProjetoWebAPI/src/04-Manager.Data/04-Manager.Data.csproj",
+        "projectUniqueName": "/ProjetoWebAPI/src/02-Manager.Domain/02-Manager.Domain.csproj",
+        "projectName": "02-Manager.Domain",
+        "projectPath": "/ProjetoWebAPI/src/02-Manager.Domain/02-Manager.Domain.csproj",
         "packagesPath": "/home/thicodes/.nuget/packages/",
-        "outputPath": "/ProjetoWebAPI/src/04-Manager.Data/obj/",
+        "outputPath": "/ProjetoWebAPI/src/02-Manager.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/thicodes/.nuget/NuGet/NuGet.Config"
@@ -43,6 +43,75 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/ProjetoWebAPI/src/04-Manager.Data/04-Manager.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/ProjetoWebAPI/src/04-Manager.Data/04-Manager.Data.csproj",
+        "projectName": "04-Manager.Data",
+        "projectPath": "/ProjetoWebAPI/src/04-Manager.Data/04-Manager.Data.csproj",
+        "packagesPath": "/home/thicodes/.nuget/packages/",
+        "outputPath": "/ProjetoWebAPI/src/04-Manager.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/thicodes/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/ProjetoWebAPI/src/02-Manager.Domain/02-Manager.Domain.csproj": {
+                "projectPath": "/ProjetoWebAPI/src/02-Manager.Domain/02-Manager.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

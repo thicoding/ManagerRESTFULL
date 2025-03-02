@@ -1,0 +1,12 @@
+/ProjetoWebAPI/src/02-Manager.Domain/bin/Debug/net9.0/02-Manager.Domain.deps.json
+/ProjetoWebAPI/src/02-Manager.Domain/bin/Debug/net9.0/02-Manager.Domain.dll
+/ProjetoWebAPI/src/02-Manager.Domain/bin/Debug/net9.0/02-Manager.Domain.pdb
+/ProjetoWebAPI/src/02-Manager.Domain/obj/Debug/net9.0/02-Manager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/ProjetoWebAPI/src/02-Manager.Domain/obj/Debug/net9.0/02-Manager.Domain.AssemblyInfoInputs.cache
+/ProjetoWebAPI/src/02-Manager.Domain/obj/Debug/net9.0/02-Manager.Domain.AssemblyInfo.cs
+/ProjetoWebAPI/src/02-Manager.Domain/obj/Debug/net9.0/02-Manager.Domain.csproj.CoreCompileInputs.cache
+/ProjetoWebAPI/src/02-Manager.Domain/obj/Debug/net9.0/02-Manager.Domain.sourcelink.json
+/ProjetoWebAPI/src/02-Manager.Domain/obj/Debug/net9.0/02-Manager.Domain.dll
+/ProjetoWebAPI/src/02-Manager.Domain/obj/Debug/net9.0/refint/02-Manager.Domain.dll
+/ProjetoWebAPI/src/02-Manager.Domain/obj/Debug/net9.0/02-Manager.Domain.pdb
+/ProjetoWebAPI/src/02-Manager.Domain/obj/Debug/net9.0/ref/02-Manager.Domain.dll

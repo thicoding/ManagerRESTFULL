@@ -1,20 +1,33 @@
+using _04_Manager.Data.Context;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// Configuração do DbContext para usar MySQL
+builder.Services.AddDbContext<MenagerContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("ProdutoConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ProdutoConnection"))
+    ));
+
+// Adicionar os serviços da API
+builder.Services.AddControllers();
+
+// Configuração do Swagger
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configuração do pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
 
-
+// Mapeia os controladores da API
+app.MapControllers();
 
 app.Run();
-

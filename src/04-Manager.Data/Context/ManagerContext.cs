@@ -15,5 +15,7 @@ namespace _04_Manager.Data.Context
         }
 
         public DbSet<User> Users { get; set; }
+
+        
     }
 }

@@ -1,4 +1,10 @@
+using _02_Manager.Data.Repository;
+using _02_Manager.Domain.Validators;
+using _02_Manager.Services;
 using _04_Manager.Data.Context;
+using _04_Manager.Data.Repository;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +18,12 @@ builder.Services.AddDbContext<MenagerContext>(options =>
 
 // Adicionar os serviços da API
 builder.Services.AddControllers();
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddValidatorsFromAssemblyContaining<UserValidator>();
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<UserService>();
 
 // Configuração do Swagger
 builder.Services.AddSwaggerGen();

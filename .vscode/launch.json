@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": ".NET Core Launch (web)",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "build",
+        "program": "${workspaceFolder}/src/01-Manager.API/bin/Debug/net8.0/01-Manager.API.dll",
+        "args": [],
+        "cwd": "${workspaceFolder}/src/01-Manager.API",
+        "stopAtEntry": false,
+        "serverReadyAction": {
+          "action": "openExternally",
+          "pattern": "\\bhttps?://\\S+"
+        },
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "sourceFileMap": {
+          "/Views": "${workspaceFolder}/src/01-Manager.API/Views"
+        }
+      }
+    ]
+  }
+  

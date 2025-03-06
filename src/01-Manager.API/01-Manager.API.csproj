@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ApiExplorer" Version="2.3.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
 
@@ -27,6 +28,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\04-Manager.Data\04-Manager.Data.csproj" />
+    <ProjectReference Include="..\03-Manager.Service\03-Manager.Service.csproj" />
+    <ProjectReference Include="..\02-Manager.Domain\02-Manager.Domain.csproj" />
   </ItemGroup>
 
 </Project>

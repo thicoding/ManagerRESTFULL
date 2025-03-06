@@ -1,5 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\04-Manager.Data\04-Manager.Data.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework> <!-- Altere para .NET 8.0 -->
     <RootNamespace>SeuNamespace</RootNamespace>
